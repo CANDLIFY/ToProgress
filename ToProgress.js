@@ -40,7 +40,8 @@
       id: 'top-progress-bar',
       color: '#F44336',
       height: '2px',
-      duration: 0.2
+      duration: 0.2,
+      zIndex: 0
     };
     if (opt && typeof opt === 'object') {
       for (var key in opt) {
@@ -65,6 +66,7 @@
       "background-color": this.options.color,
       "height": this.options.height,
       "width": "0%",
+      "zIndex": this.options.zIndex,
       "transition": "width " + this.options.duration + "s" + ", opacity " + this.options.opacityDuration + "s",
       "-moz-transition": "width " + this.options.duration + "s" + ", opacity " + this.options.opacityDuration + "s",
       "-webkit-transition": "width " + this.options.duration + "s" + ", opacity " + this.options.opacityDuration + "s"
